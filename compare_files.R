@@ -4,11 +4,12 @@ library(readtext)
 # library(vecsets)
 library(magrittr)
 
-# path <- "C:/Users/BhattK2/OneDrive - De Lage Landen International B.V/compareFiles"
-dllPath <- "//penguin.dll.corp/leaicmdata$/Scorecard Management/02 Countries/Ireland/04 Projects/Powercurve/"
-
+# change path to your local dir
+path <- "C:/BhattK"
 setwd(path)
 '%ni%' <- Negate('%in%')
+
+# TODO: Make this generic
 
 # Step 1: Read all files from the location and make checks
 pcFiles <- list.files(path = "./outputPowercurve/score",full.names = F)
